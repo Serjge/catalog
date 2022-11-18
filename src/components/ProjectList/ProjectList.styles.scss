@@ -1,0 +1,59 @@
+@import "src/style/varibles";
+
+.projectList {
+  width: 234px;
+  height: 100%;
+  position: fixed;
+  background-color: $backgroundColorSecond;
+  border-right: 1px solid $borderColorMain;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    border-right: 1px solid $borderColorMain;
+    border-bottom: 1px solid $borderColorMain;
+    padding: 8px 13px 8px 20px;
+    color: $colorSecond;
+  }
+
+  &__subtitle {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &__arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid $colorMain;
+    border-right: 3px solid $colorMain;
+
+    &_up {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: 10px;
+    }
+
+    &_down {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      margin-top: 5px;
+    }
+  }
+
+  &__item {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+
+    &_active {
+      background-color: $colorSecond;
+    }
+  }
+
+  &__itemName {
+    margin-left: 15px;
+  }
+
+}

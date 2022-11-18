@@ -1,5 +1,11 @@
 import { ReactElement } from 'react';
 
+import { ProjectList } from 'components';
+
 export function Main(): ReactElement {
-  return <div>Main</div>;
+  return (
+    <main>
+      <ProjectList />
+    </main>
+  );
 }
