@@ -1,11 +1,13 @@
 import { ReactElement } from 'react';
 
-import { ProjectList } from 'components';
+import { ProjectList, Tab } from 'components';
+import './Main.style.scss';
 
 export function Main(): ReactElement {
   return (
-    <main>
+    <main className="main">
       <ProjectList />
+      <Tab />
     </main>
   );
 }

@@ -1,0 +1,70 @@
+@import "src/style/varibles";
+
+.icons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 6px;
+
+  &__active {
+    &:after {
+      content: '';
+      top: 0;
+      right: 0;
+      position: absolute;
+      background: $borderColorMain;
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &_75:after {
+      width: 75%;
+    }
+
+    &_50:after {
+      width: 50%;
+    }
+  }
+
+
+  &__wrapper {
+    &_left {
+
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      width: 57px;
+      height: 20px;
+      border-bottom: 2px solid $colorMain;
+      border-right: 2px solid $colorMain;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(90deg);
+      z-index: 1;
+    }
+
+    &_straight {
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: -22px;
+      height: 60px;
+      z-index: 1;
+      border-right: 2px solid $colorMain;
+    }
+  }
+
+  &__container {
+    flex-basis: 25%;
+    flex-shrink: 1;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 5;
+  }
+}
+

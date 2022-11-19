@@ -1,0 +1,42 @@
+@import "src/style/varibles";
+
+.table {
+  width: 99%;
+
+  &__rowHead {
+    height: 40px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.1px;
+
+    color: $colorSecond;
+  }
+
+  &__head {
+    width: 200px;
+    padding-left: 12px;
+
+    &:first-child {
+      width: 110px;
+    }
+
+    &:nth-child(2) {
+      width: 757px;
+    }
+
+  }
+  &__row {
+    height: 57px;
+  }
+
+  &__column {
+    padding-left: 12px;
+    border-top: 1px solid $borderColorMain;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+  }
+}
