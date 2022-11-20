@@ -1,7 +1,8 @@
 import { KeyboardEvent, ReactElement, useRef } from 'react';
 
+import { TableItemProps } from './TableItem.types';
+
 import { Icons } from 'components';
-import { TableItemProps } from 'components/Tab/Table/TableItem/TableItem.types';
 import { NEW_ROW_ID } from 'const';
 import { RequestRow } from 'types/list';
 

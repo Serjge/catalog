@@ -8,6 +8,6 @@
 
 ### `yarn install`
 
-run project with command
+To work with api rename file .env.local.samples to .env.local add variables and run application
 
 ### `yarn start`
