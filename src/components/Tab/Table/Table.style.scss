@@ -26,6 +26,7 @@
     }
 
   }
+
   &__row {
     height: 57px;
   }
@@ -37,6 +38,20 @@
     &:first-child {
       padding-left: 0;
     }
+
+  }
+
+  &__input {
+    border: 1px solid #414144;
+    border-radius: 6px;
+    padding: 9px;
+    background: #202124;
+
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.1px;
+    width: 100%;
+    color: #71717A;
 
   }
 }

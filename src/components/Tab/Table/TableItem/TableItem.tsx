@@ -89,10 +89,16 @@ export function TableItem(props: TableItemProps): ReactElement {
       {isEdit && typeFolder === 'paper' ? (
         <>
           <td className="table__column">
-            <input ref={refRowName} onKeyPress={onEnterClick} defaultValue={rowName} />
+            <input
+              className="table__input"
+              ref={refRowName}
+              onKeyPress={onEnterClick}
+              defaultValue={rowName}
+            />
           </td>
           <td className="table__column">
             <input
+              className="table__input"
               ref={refSalary}
               onKeyPress={onEnterClick}
               defaultValue={formatter.format(salary)}
@@ -100,6 +106,7 @@ export function TableItem(props: TableItemProps): ReactElement {
           </td>
           <td className="table__column">
             <input
+              className="table__input"
               ref={refEquipmentCosts}
               onKeyPress={onEnterClick}
               defaultValue={formatter.format(equipmentCosts)}
@@ -107,6 +114,7 @@ export function TableItem(props: TableItemProps): ReactElement {
           </td>
           <td className="table__column">
             <input
+              className="table__input"
               ref={refOverheads}
               onKeyPress={onEnterClick}
               defaultValue={formatter.format(overheads)}
@@ -114,6 +122,7 @@ export function TableItem(props: TableItemProps): ReactElement {
           </td>
           <td className="table__column">
             <input
+              className="table__input"
               ref={refEstimatedProfit}
               onKeyPress={onEnterClick}
               defaultValue={formatter.format(estimatedProfit)}
@@ -124,7 +133,12 @@ export function TableItem(props: TableItemProps): ReactElement {
         <>
           <td className="table__column">
             {isEdit && typeFolder !== 'paper' ? (
-              <input ref={refRowName} onKeyPress={onEnterClick} defaultValue={rowName} />
+              <input
+                className="table__input"
+                ref={refRowName}
+                onKeyPress={onEnterClick}
+                defaultValue={rowName}
+              />
             ) : (
               rowName
             )}
